@@ -9,9 +9,6 @@ echo "2. creating directories"
 chmod a+x+r+w sql
 chmod a+r sql/*.sql
 
-mkdir log
-chmod 777 log
-
 mkdir output
 chmod 777 output
 
