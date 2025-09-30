@@ -6,9 +6,9 @@ set -e
 
 echo "2. creating directories"
 
-mkdir oradata
-chmod 755 oradata
-sudo chown 54321:54321 oradata
+mkdir data
+chmod 755 data
+sudo chown 54321:54321 data
 
 chmod a+x+r+w sql
 chmod a+r sql/*.sql
