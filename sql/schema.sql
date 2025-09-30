@@ -1,5 +1,3 @@
-alter session set "_oracle_script"=true;
-
 ALTER SESSION SET CONTAINER = XEPDB1;
 
 CREATE USER AFADEEV IDENTIFIED BY 123;
