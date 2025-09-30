@@ -28,14 +28,4 @@ if [ "$(docker ps -a -q -f name=${DB_CONTAINER})" ]; then
     docker rm -f ${DB_CONTAINER}
 fi
 
-if [ -d output ]; then
-    sudo rm -rf output
-fi
-
-if [ -d log ]; then
-    sudo rm -rf log
-fi
-
-sudo rm -f sql/*.out
-
 echo "- all OK"

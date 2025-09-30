@@ -31,7 +31,7 @@ def get_oracle_conn() -> Connection:
     conn = oracledb.connect(
         user="AFADEEV",
         password='AFADEEV123',
-        host="ip-address",
+        host="localhost",
         port=1521,
         service_name="XEPDB1"
     )
