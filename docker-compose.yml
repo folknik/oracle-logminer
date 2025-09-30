@@ -157,7 +157,7 @@ services:
     depends_on:
       - kafka
       - kafka-connect
-      # - schema-registry
+      - schema-registry
 
 
   oracle:
