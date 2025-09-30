@@ -28,15 +28,15 @@ if [ "$(docker ps -a -q -f name=${DB_CONTAINER})" ]; then
     docker rm -f ${DB_CONTAINER}
 fi
 
-if [ -d oradata ]; then
-    sudo rm -rf oradata
+if [ -d data ]; then
+    sudo rm -rf data
 fi
 
 if [ -d output ]; then
     sudo rm -rf output
 fi
 
-if [ -d output ]; then
+if [ -d log ]; then
     sudo rm -rf log
 fi
 

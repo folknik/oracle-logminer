@@ -165,7 +165,7 @@ services:
     hostname: oracle
     container_name: "${DB_CONTAINER}"
     volumes:
-      - ./oradata:/opt/oracle/oradata
+      - ./data:/opt/oracle
       - ./sql:/opt/sql
       - ./output:/opt/output
       - ./setup:/opt/oracle/scripts/setup
