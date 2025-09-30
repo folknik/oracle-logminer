@@ -11,8 +11,8 @@ GRANT CREATE VIEW TO AFADEEV;
 
 
 CREATE TABLE AFADEEV.USERS (
-	id      		INT generated as identity NOT NULL ,
-	first_name     VARCHAR2(64) NOT NULL,
+	id      		INT generated as identity NOT NULL,
+	first_name      VARCHAR2(64) NOT NULL,
 	last_name     	VARCHAR2(64) NOT NULL,
 	age 			INT NOT NULL,
 	city     		VARCHAR2(64) NOT NULL,
