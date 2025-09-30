@@ -36,6 +36,10 @@ if [ -d output ]; then
     sudo rm -rf output
 fi
 
+if [ -d output ]; then
+    sudo rm -rf log
+fi
+
 sudo rm -f sql/*.out
 
 echo "- all OK"
