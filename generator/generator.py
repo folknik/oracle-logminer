@@ -7,7 +7,7 @@ from contextlib import closing
 import oracledb
 from oracledb.connection import Connection
 
-N = 100
+N = 10
 
 
 def generate_fake_data() -> List[Tuple]:
@@ -29,9 +29,9 @@ def generate_fake_data() -> List[Tuple]:
 
 def get_oracle_conn() -> Connection:
     conn = oracledb.connect(
-        user="AFADEEV",
-        password='AFADEEV123',
-        host="localhost",
+        user="TESTUSER",
+        password='TESTUSER123',
+        host="138.124.123.61",
         port=1521,
         service_name="XEPDB1"
     )
@@ -42,10 +42,10 @@ def get_oracle_conn() -> Connection:
 def main() -> None:
     data = generate_fake_data()
 
-    select_query = "SELECT COUNT(*) FROM AFADEEV.USERS"
+    select_query = "SELECT COUNT(*) FROM TESTUSER.USERS"
 
     insert_query = """
-        INSERT INTO AFADEEV.USERS (
+        INSERT INTO TESTUSER.USERS (
             FIRST_NAME,
             LAST_NAME,
             AGE,
